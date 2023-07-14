@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:010333821026:task-definition/repophp:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:010333821026:task-definition/phpapp:1",
     "containerDefinitions": [
         {
-            "name": "repophp",
-            "image": "010333821026.dkr.ecr.us-east-2.amazonaws.com/repophp",
+            "name": "phpapp",
+            "image": "010333821026.dkr.ecr.us-east-2.amazonaws.com/phpapp",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "repophp-80-tcp",
+                    "name": "phpapp-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -22,7 +22,7 @@
             "ulimits": []
         }
     ],
-    "family": "repophp",
+    "family": "phpapp",
     "taskRoleArn": "arn:aws:iam::010333821026:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::010333821026:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -60,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-14T14:48:45.017Z",
+    "registeredAt": "2023-07-14T19:58:10.021Z",
     "registeredBy": "arn:aws:iam::010333821026:root",
     "tags": []
 }
